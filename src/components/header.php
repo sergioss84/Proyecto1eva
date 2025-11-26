@@ -13,8 +13,8 @@ $lang = include __DIR__ . "/../lang/{$langSelected}.php";
 </header>
 <BODY>
     <div class="right">
-        <a href="?=es"><img src="/img/ES.png"></a>
-        <a href="?=uk"><img src="/img/UK.png"></a>
+        <a href="?=es"><img src="img/ES.png"></a>
+        <a href="?=uk"><img src="img/UK.png"></a>
         <a class="flag" href="?lang=es<?= isset($_GET['from']) ? '&from='.$_GET['from'] : '' ?>" title="Español">ES</a>
         <a class="flag" href="?lang=en<?= isset($_GET['from']) ? '&from='.$_GET['from'] : '' ?>" title="English">EN</a>
 
