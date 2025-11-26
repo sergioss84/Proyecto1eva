@@ -57,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($lang['login']) ?></title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images.png" type="image/png">
 </head>
 <body>
 <?php include "components/header.php"; ?>
@@ -74,6 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <?php if ($mostrarError): ?>
             <p class="error"><?= htmlspecialchars($lang['error_pass']) ?></p>
         <?php endif; ?>
+        
 
         <p class="small"><?= htmlspecialchars($lang['attempts_left']) ?> <?= $intentosRestantes ?></p>
     </form>
