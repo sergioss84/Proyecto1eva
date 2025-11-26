@@ -7,8 +7,8 @@ function initialize() {
 initialize();
 
 // CREDENCIALES CORRECTAS (variables globales)
-$GLOBALS["USUARIO_CORRECTO"] = "admin";
-$GLOBALS["PASSWORD_CORRECTA"] = "soft123";
+$GLOBALS["USUARIO_CORRECTO"] = "COLDEN";
+$GLOBALS["PASSWORD_CORRECTA"] = "alumno";
 
 // idioma
 $langSelected = $_GET['lang'] ?? ($_SESSION['lang'] ?? 'es');

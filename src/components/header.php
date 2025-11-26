@@ -9,8 +9,8 @@ $lang = include __DIR__ . "/../lang/{$langSelected}.php";
         <h2><?= htmlspecialchars($lang['title']) ?></h2>
     </div>
     <div class="right">
-        <a class="flag" href="?lang=es<?= isset($_GET['from']) ? '&from='.$_GET['from'] : '' ?>" title="Español">🇪🇸</a>
-        <a class="flag" href="?lang=en<?= isset($_GET['from']) ? '&from='.$_GET['from'] : '' ?>" title="English">🇬🇧</a>
+        <a class="flag" href="?lang=es<?= isset($_GET['from']) ? '&from='.$_GET['from'] : '' ?>" title="Español">ES</a>
+        <a class="flag" href="?lang=en<?= isset($_GET['from']) ? '&from='.$_GET['from'] : '' ?>" title="English">EN</a>
 
         <?php if (isset($_SESSION["logueado"]) && $_SESSION["logueado"]): ?>
             <a class="logout" href="index.php?reset=true"><?= htmlspecialchars($lang['logout']) ?></a>

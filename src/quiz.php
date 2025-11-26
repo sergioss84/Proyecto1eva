@@ -13,18 +13,18 @@ $score = 0;
 $total = 10;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Respuestas correctas (simple)
+
     $correct = [
-        "q1" => "Camisa",
-        "q2" => "option2", // radio
-        "q3" => ["talla_s", "talla_m"], // checkbox: se considera correcta si selecciona S y M por ejemplo
-        "q4" => "blue", // select
-        "q5" => "10", // number
+        "q1" => "IAPWE",
+        "q2" => "Si", 
+        "q3" => "PHP", 
+        "q4" => "Gonzalo el mejor", 
+        "q5" => "6", 
         "q6" => "Si",
-        "q7" => "Algodón",
-        "q8" => "option1",
-        "q9" => "No",
-        "q10" => "Negro"
+        "q7" => "Programación",
+        "q8" => "Gonzi Skater",
+        "q9" => "Si",
+        "q10" => "IAPWE"
     ];
 
     // comprobar q1 (texto)
@@ -87,62 +87,62 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST">
             <ol class="quiz-list">
                 <li>
-                    <label>1. Escribe exactamente: ¿Qué prenda es esta? (ej. Camisa)</label><br>
+                    <label>1. ¿Cómo se llama esta asignatura?</label><br>
                     <input type="text" name="q1" required>
                 </li>
 
                 <li>
-                    <label>2. ¿Cuál es la mejor opción para verano?</label><br>
-                    <label><input type="radio" name="q2" value="option1"> Opción 1</label>
-                    <label><input type="radio" name="q2" value="option2"> Opción 2</label>
+                    <label>2. ¿Te gusta esta asignatura?</label><br>
+                    <label><input type="radio" name="q2" value="option1"> Si</label>
+                    <label><input type="radio" name="q2" value="option2"> No</label>
                 </li>
 
                 <li>
-                    <label>3. Marca las tallas disponibles (puedes elegir varias):</label><br>
-                    <label><input type="checkbox" name="q3[]" value="talla_s"> S</label>
-                    <label><input type="checkbox" name="q3[]" value="talla_m"> M</label>
-                    <label><input type="checkbox" name="q3[]" value="talla_l"> L</label>
+                    <label>3. Lenguaje de programación favorito</label><br>
+                    <label><input type="checkbox" name="q3[]" value="php"> PHP</label>
+                    <label><input type="checkbox" name="q3[]" value="java"> Java</label>
+                    <label><input type="checkbox" name="q3[]" value="python"> Python</label>
                 </li>
 
                 <li>
-                    <label>4. Elige un color:</label><br>
+                    <label>4. Elige un profesor:</label><br>
                     <select name="q4">
-                        <option value="red">Rojo</option>
-                        <option value="blue">Azul</option>
-                        <option value="green">Verde</option>
+                        <option value="gonzalo">Gonzalo</option>
+                        <option value="gonzi">Gonzi</option>
+                        <option value="gonzalothebest">Gonzalo el mejor</option>
                     </select>
                 </li>
 
                 <li>
-                    <label>5. ¿Cuántas prendas hay? (escribe un número)</label><br>
+                    <label>5. ¿Cuántos temas tiene este modulo?</label><br>
                     <input type="number" name="q5" min="0" required>
                 </li>
 
                 <li>
-                    <label>6. ¿Ofrecemos devoluciones?</label><br>
+                    <label>6. ¿Tenemos recuperaciones?</label><br>
                     <label><input type="radio" name="q6" value="Si"> Sí</label>
                     <label><input type="radio" name="q6" value="No"> No</label>
                 </li>
 
                 <li>
-                    <label>7. ¿Material principal? (ej. Algodón)</label><br>
+                    <label>7. ¿Materia principal? </label><br>
                     <input type="text" name="q7" required>
                 </li>
 
                 <li>
-                    <label>8. ¿Cuál es la categoría más vendida?</label><br>
-                    <label><input type="radio" name="q8" value="option1"> Ropa casual</label>
-                    <label><input type="radio" name="q8" value="option2"> Ropa deportiva</label>
+                    <label>8. ¿Cuál es tu tema favorito?</label><br>
+                    <label><input type="radio" name="q8" value="option1"> PHP</label>
+                    <label><input type="radio" name="q8" value="option2"> Gonzi Skater</label>
                 </li>
 
                 <li>
-                    <label>9. ¿Tenemos tienda física?</label><br>
+                    <label>9. ¿Tenemos plataforma educativa?</label><br>
                     <label><input type="radio" name="q9" value="Si"> Sí</label>
                     <label><input type="radio" name="q9" value="No"> No</label>
                 </li>
 
                 <li>
-                    <label>10. ¿Color más vendido? (ej. Negro)</label><br>
+                    <label>10. ¿Asignatura mas aprobada?</label><br>
                     <input type="text" name="q10" required>
                 </li>
             </ol>

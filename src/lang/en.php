@@ -1,6 +1,6 @@
 <?php
 return [
-    "title" => "SoftWear – Clothing Store",
+    "title" => "CØLDEN – Clothing Store",
     "login" => "Login",
     "usuario" => "User",
     "password" => "Password",

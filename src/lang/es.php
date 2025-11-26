@@ -1,6 +1,6 @@
 <?php
 return [
-    "title" => "SoftWear – Tienda de Ropa",
+    "title" => "CØLDEN – Tienda de Ropa",
     "login" => "Iniciar sesión",
     "usuario" => "Usuario",
     "password" => "Contraseña",

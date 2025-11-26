@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', Arial, sans-serif;
-    background: #f7f8fb;
+    background: #7d93d7;
     color: #222;
 }
 
@@ -12,7 +12,7 @@ body {
     justify-content:space-between;
     align-items:center;
     padding:12px 20px;
-    background: #ffffff;
+    background: #7d937d;
 }
 .site-header h2 { margin:0; font-size:18px; color:#111; }
 .site-header .right { display:flex; gap:10px; align-items:center; }
